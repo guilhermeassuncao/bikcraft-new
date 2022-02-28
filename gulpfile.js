@@ -13,7 +13,7 @@ function sassAutoPrefixer() {
         .src("public/css/src/*.scss")
         .pipe(
             gulpSass({
-                outputStyle: "compressed",
+                outputStyle: "expanded",
             })
         )
         .pipe(
@@ -21,7 +21,7 @@ function sassAutoPrefixer() {
                 cascade: false,
             })
         )
-        .pipe(gulp.dest("public/css/dest/style.css"))
+        .pipe(gulp.dest("public/css/dest"))
         .pipe(browserSync.stream());
 }
 

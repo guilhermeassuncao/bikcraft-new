@@ -1,0 +1,25 @@
+/* Header */
+.header {
+    display: grid;
+    gap: 3.75rem;
+    justify-items: center;
+
+    &-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+
+        a {
+            background: $white;
+            padding: 1rem 2rem;
+            border-radius: 0.25rem;
+            color: $black;
+            text-transform: uppercase;
+            &:hover {
+                background: $red;
+                color: $white;
+            }
+        }
+    }
+}

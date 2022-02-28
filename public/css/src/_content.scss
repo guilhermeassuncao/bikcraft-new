@@ -1,0 +1,68 @@
+/* Content */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 75rem;
+    margin: 0 2rem 1rem;
+
+    @include d() {
+        grid-template-columns: 1fr;
+    }
+
+    &-title {
+        @include font-size-title;
+    }
+
+    &-intro {
+        background: $white;
+        padding: 2.5rem;
+        text-align: right;
+        position: relative;
+        display: grid;
+        gap: 1.25rem;
+        align-content: center;
+        justify-items: end;
+    }
+
+    &-subtitle {
+        @include font-size-title;
+        text-transform: uppercase;
+        color: $gray-dark;
+        text-align: right;
+        padding: 2.5rem;
+        align-self: center;
+    }
+
+    &-attributes {
+        background: $white;
+        padding: 2.5rem;
+
+        &-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.625rem 1.25rem;
+            padding: 1.25rem;
+
+            p {
+                grid-column: 2;
+            }
+        }
+    }
+
+    &-link {
+        background: $red;
+        color: $white;
+        padding: 1rem 2rem;
+        border-radius: 0.25rem;
+        text-transform: uppercase;
+    }
+
+    &-detail {
+        width: 4rem;
+        height: 0.25rem;
+        background: $red;
+        position: absolute;
+        top: 1.875rem;
+        right: -1.875rem;
+    }
+}

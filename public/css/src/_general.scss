@@ -1,0 +1,27 @@
+/* General */
+body {
+    @include font-famaly-general;
+    margin: 0;
+    margin-top: 3.75rem;
+    background-color: $gray;
+    display: grid;
+    gap: 3.75rem;
+    justify-items: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    @include font-size-main;
+}

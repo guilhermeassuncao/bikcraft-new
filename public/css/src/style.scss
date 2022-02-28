@@ -1,3 +1,4 @@
-body {
-    background: #000;
-}
+@import "variables";
+@import "general";
+@import "header";
+@import "content";

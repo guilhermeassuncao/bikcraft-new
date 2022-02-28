@@ -1,0 +1,121 @@
+/* General */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  margin-top: 3.75rem;
+  background-color: #f7f7f7;
+  display: grid;
+  gap: 3.75rem;
+  justify-items: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+/* Header */
+.header {
+  display: grid;
+  gap: 3.75rem;
+  justify-items: center;
+}
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.header-nav a {
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  color: #000;
+  text-transform: uppercase;
+}
+.header-nav a:hover {
+  background: #ee2211;
+  color: #fff;
+}
+
+/* Content */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 75rem;
+  margin: 0 2rem 1rem;
+}
+@media screen and (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+.content-title {
+  font-size: 2rem;
+}
+.content-intro {
+  background: #fff;
+  padding: 2.5rem;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: end;
+}
+.content-subtitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #c6c6c6;
+  text-align: right;
+  padding: 2.5rem;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+.content-attributes {
+  background: #fff;
+  padding: 2.5rem;
+}
+.content-attributes-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.625rem 1.25rem;
+  padding: 1.25rem;
+}
+.content-attributes-item p {
+  grid-column: 2;
+}
+.content-link {
+  background: #ee2211;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+.content-detail {
+  width: 4rem;
+  height: 0.25rem;
+  background: #ee2211;
+  position: absolute;
+  top: 1.875rem;
+  right: -1.875rem;
+}
