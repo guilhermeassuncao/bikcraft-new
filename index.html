@@ -5,6 +5,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Aprendizado sobre NPM e Gulp" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Bikcraft - Aprendizado sobre NPM e Gulp" />
+        <meta property="og:description" content="Aprendizado sobre NPM e Gulp" />
+        <meta property="og:url" content="https://guilhermeassuncao.github.io/bikcraft-gulp" />
+        <meta property="og:image" content="https://guilhermeassuncao.github.io/bikcraft-gulp/public/img/og-image.jpg" />
         <!-- Fim Meta -->
 
         <!-- CSS -->
@@ -22,47 +28,15 @@
         <header class="header">
             <img class="header-logo" src="./public/img/bikcraft.svg" alt="Bikcraft" />
             <nav class="header-nav">
-                <a href="/">Urbana</a>
-                <a href="/">Elétrica</a>
-                <a href="/">Mountain</a>
-                <a href="/">Speed</a>
+                <a href="#eletrica">Elétrica</a>
+                <a href="#urbana">Urbana</a>
+                <a href="#moutain">Mountain</a>
+                <a href="#speed">Speed</a>
             </nav>
         </header>
 
         <!-- Conteúdo -->
-        <section class="content">
-            <div class="content-intro">
-                <span class="content-detail"></span>
-                <h1 class="content-title">Bikcraft Feitas a Mão</h1>
-                <p class="content-paragraph">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
-                <a class="content-link">Ver Mais</a>
-            </div>
-            <div class="content-img">
-                <img src="./public/img/bicicleta.jpg" alt="Bicicleta Bikcraft" />
-            </div>
-            <div class="content-subtitle">
-                <h2>Vantagens Bikcraft Urbana</h2>
-            </div>
-            <div class="content-attributes">
-                <div class="content-attributes-item">
-                    <img src="./public/img/eletrica.svg" alt="" />
-                    <h3>Motor Elétrico</h3>
-                    <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-                </div>
-                <div class="content-attributes-item">
-                    <img src="./public/img/velocidade.svg" alt="" />
-                    <h3>40 KM</h3>
-                    <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-                </div>
-                <div class="content-attributes-item">
-                    <img src="./public/img/eletrica.svg" alt="" />
-                    <h3>Rastreador</h3>
-                    <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content">
+        <section class="content" id="eletrica">
             <div class="content-intro">
                 <span class="content-detail"></span>
                 <h1 class="content-title">Bikcraft Feitas a Mão</h1>
@@ -94,7 +68,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="urbana">
             <div class="content-intro">
                 <span class="content-detail"></span>
                 <h1 class="content-title">Bikcraft Feitas a Mão</h1>
@@ -102,7 +76,39 @@
                 <a class="content-link">Ver Mais</a>
             </div>
             <div class="content-img">
-                <img src="./public/img/bicicleta.jpg" alt="Bicicleta Bikcraft" />
+                <img src="./public/img/bicicleta2.jpg" alt="Bicicleta Bikcraft" />
+            </div>
+            <div class="content-subtitle">
+                <h2>Vantagens Bikcraft Urbana</h2>
+            </div>
+            <div class="content-attributes">
+                <div class="content-attributes-item">
+                    <img src="./public/img/eletrica.svg" alt="" />
+                    <h3>Motor Elétrico</h3>
+                    <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+                </div>
+                <div class="content-attributes-item">
+                    <img src="./public/img/velocidade.svg" alt="" />
+                    <h3>40 KM</h3>
+                    <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+                </div>
+                <div class="content-attributes-item">
+                    <img src="./public/img/eletrica.svg" alt="" />
+                    <h3>Rastreador</h3>
+                    <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content" id="moutain">
+            <div class="content-intro">
+                <span class="content-detail"></span>
+                <h1 class="content-title">Bikcraft Feitas a Mão</h1>
+                <p class="content-paragraph">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
+                <a class="content-link">Ver Mais</a>
+            </div>
+            <div class="content-img">
+                <img src="./public/img/bicicleta3.jpg" alt="Bicicleta Bikcraft" />
             </div>
             <div class="content-subtitle">
                 <h2>Vantagens Bikcraft Mountain</h2>
@@ -126,7 +132,7 @@
             </div>
         </section>
 
-        <section class="content">
+        <section class="content" id="speed">
             <div class="content-intro">
                 <span class="content-detail"></span>
                 <h1 class="content-title">Bikcraft Feitas a Mão</h1>
@@ -134,7 +140,7 @@
                 <a class="content-link">Ver Mais</a>
             </div>
             <div class="content-img">
-                <img src="./public/img/bicicleta.jpg" alt="Bicicleta Bikcraft" />
+                <img src="./public/img/bicicleta4.jpg" alt="Bicicleta Bikcraft" />
             </div>
             <div class="content-subtitle">
                 <h2>Vantagens Bikcraft Speed</h2>
@@ -164,6 +170,7 @@
         </footer>
 
         <!-- Scripts -->
+        <script src="./public/js/dest/plugin.js"></script>
         <script src="./public/js/dest/app.js"></script>
     </body>
 </html>

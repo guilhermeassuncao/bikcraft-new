@@ -13,7 +13,7 @@ function sassAutoPrefixer() {
         .src("public/css/src/*.scss")
         .pipe(
             gulpSass({
-                outputStyle: "expanded",
+                outputStyle: "compressed",
             })
         )
         .pipe(
@@ -49,10 +49,18 @@ function browser() {
     });
 }
 
+//Plugin JS
+function pluginJs() {
+    return gulp
+        .src(["node_modules/scrollreveal/dist/scrollreveal.min.js", "public/js/dest/plugin.js"])
+        .pipe(gulpConcat("plugin.js"))
+        .pipe(gulp.dest("public/js/dest"))
+        .pipe(browserSync.stream());
+}
+
 //Executa Tarefas quando ocorre alguma alteração
 function watch() {
     gulp.watch("public/css/src/*.scss", sassAutoPrefixer);
-    gulp.watch("js/main/*.js", js);
     gulp.watch("public/js/src/*.js", js);
     gulp.watch(["*.html"]).on("change", browserSync.reload);
 }
@@ -63,6 +71,9 @@ exports.sassAutoPrefixer = sassAutoPrefixer;
 //Tarefa JS
 exports.js = js;
 
+//Tarefa pluginJS
+exports.pluginJs = pluginJs;
+
 //Tarefa Browser
 exports.browser = browser;
 
@@ -70,4 +81,4 @@ exports.browser = browser;
 exports.watch = watch;
 
 //Tarefa Default
-exports.default = gulp.parallel(sassAutoPrefixer, watch, browser, js);
+exports.default = gulp.parallel(sassAutoPrefixer, watch, browser, js, pluginJs);

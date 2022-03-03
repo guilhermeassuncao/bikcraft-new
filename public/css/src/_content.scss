@@ -5,7 +5,7 @@
     max-width: 75rem;
     margin: 0 2rem 1rem;
 
-    @include d() {
+    @include mediaQueries(1) {
         grid-template-columns: 1fr;
     }
 
@@ -31,6 +31,10 @@
         text-align: right;
         padding: 2.5rem;
         align-self: center;
+
+        @include mediaQueries(1) {
+            font-size: 1.5rem;
+        }
     }
 
     &-attributes {

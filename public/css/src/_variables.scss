@@ -20,8 +20,10 @@ $black: #000;
 }
 
 //Media Queries
-@mixin d() {
-    @media screen and (max-width: 900px) {
-        @content;
+@mixin mediaQueries($options) {
+    @if ($options == 1){
+        @media screen and (max-width: 900px) {
+            @content;
+        }
     }
 }
