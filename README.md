@@ -22,6 +22,7 @@ Professor - André Rafael
 
 - HTML5
 - CSS3
+- JavaScript
 - NPM
 - GULP
 
