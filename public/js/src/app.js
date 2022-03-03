@@ -46,43 +46,31 @@ const scrollSmooth = new ScrollSmooth('a[href^="#"]');
 scrollSmooth.init();
 
 //Scroll Reveal
-ScrollReveal().reveal(".header-nav a", {
-    delay: 750,
-    useDelay: "once",
+ScrollReveal({
+    scale: 0.85,
+    duration: 1000,
+    useDelay: "onload",
     reset: true,
     easing: "ease-in-out",
-    scale: 0.75,
+});
+
+ScrollReveal().reveal(".header-nav a", {
+    delay: 750,
     interval: 200,
 });
 
 ScrollReveal().reveal(".content-intro", {
     delay: 750,
-    useDelay: "once",
-    reset: true,
-    easing: "ease-in-out",
-    scale: 0.75,
 });
 
 ScrollReveal().reveal(".content-img", {
     delay: 500,
-    useDelay: "once",
-    reset: true,
-    easing: "ease-in-out",
-    scale: 0.75,
 });
 
 ScrollReveal().reveal(".content-subtitle", {
     delay: 1000,
-    useDelay: "once",
-    reset: true,
-    easing: "ease-in-out",
-    scale: 0.75,
 });
 
 ScrollReveal().reveal(".content-attributes", {
     delay: 1250,
-    useDelay: "once",
-    reset: true,
-    easing: "ease-in-out",
-    scale: 0.75,
 });
