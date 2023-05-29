@@ -1,11 +1,9 @@
-//Classe Scroll Suave
 class ScrollSmooth {
-    //Construtor
     constructor(links, options) {
         this.linksInternos = document.querySelectorAll(links);
 
         if (options === undefined) {
-            this.options = { behavior: "smooth", block: "nearest" };
+            this.options = { behavior: 'smooth', block: 'nearest' };
         } else {
             this.options = options;
         }
@@ -13,24 +11,21 @@ class ScrollSmooth {
         this.scrollToSection = this.scrollToSection.bind(this);
     }
 
-    //Scroll para a seção
     scrollToSection(event) {
         event.preventDefault();
 
-        const href = event.currentTarget.getAttribute("href");
+        const href = event.currentTarget.getAttribute('href');
         const section = document.querySelector(href);
 
         section.scrollIntoView(this.options);
     }
 
-    //Adicionar evento aos links
     addLinkEvent() {
         this.linksInternos.forEach((link) => {
-            link.addEventListener("click", this.scrollToSection);
+            link.addEventListener('click', this.scrollToSection);
         });
     }
 
-    //Inicia o Evento
     init() {
         if (this.linksInternos.length) {
             this.addLinkEvent();
@@ -39,38 +34,35 @@ class ScrollSmooth {
     }
 }
 
-//Instancia Classe Scroll Suave
 const scrollSmooth = new ScrollSmooth('a[href^="#"]');
 
-//Inicia Scroll Suave
 scrollSmooth.init();
 
-//Scroll Reveal
 ScrollReveal({
     scale: 0.85,
     duration: 1000,
-    useDelay: "onload",
+    useDelay: 'onload',
     reset: true,
-    easing: "ease-in-out",
+    easing: 'ease-in-out',
 });
 
-ScrollReveal().reveal(".header-nav a", {
+ScrollReveal().reveal('.header-nav a', {
     delay: 750,
     interval: 200,
 });
 
-ScrollReveal().reveal(".content-intro", {
+ScrollReveal().reveal('.content-intro', {
     delay: 750,
 });
 
-ScrollReveal().reveal(".content-img", {
+ScrollReveal().reveal('.content-img', {
     delay: 500,
 });
 
-ScrollReveal().reveal(".content-subtitle", {
+ScrollReveal().reveal('.content-subtitle', {
     delay: 1000,
 });
 
-ScrollReveal().reveal(".content-attributes", {
+ScrollReveal().reveal('.content-attributes', {
     delay: 1250,
 });

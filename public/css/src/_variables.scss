@@ -1,11 +1,9 @@
-//Cores
 $gray: #f7f7f7;
 $gray-dark: #c6c6c6;
 $red: #ee2211;
 $white: #fff;
 $black: #000;
 
-//Tipografia
 @mixin font-size-main {
     font-size: 1.25rem;
     line-height: 1.25;
@@ -19,9 +17,8 @@ $black: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-//Media Queries
 @mixin mediaQueries($options) {
-    @if ($options == 1){
+    @if ($options == 1) {
         @media screen and (max-width: 900px) {
             @content;
         }
